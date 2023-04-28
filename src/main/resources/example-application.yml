@@ -1,0 +1,21 @@
+management:
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: "*"
+
+server:
+  port: 8092
+  servlet:
+    context-path: /inventario
+
+spring:
+  neo4j:
+    uri: bolt://0.0.0.0:7687
+    authentication:
+      username: neo4j
+      password: password
+
+
+
